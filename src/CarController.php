@@ -16,12 +16,6 @@ class CarController
         
         $cars = CarModel::getCars();
 
-        echo '<pre>';
-        print_r($cars);
-        echo '</pre>';
-
-        exit;
-
         include CONFIG_VIEWS_DIR . '/index.php';
     }
 
@@ -67,7 +61,7 @@ class CarController
                 $_SESSION['msg'] ='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
             }
 
-            header('location: /motork/web/detail/'.$_POST['carId']);
+            header('location: /detail/'.$_POST['carId']);
             
         }
     }

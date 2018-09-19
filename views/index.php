@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/multimodel.style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/assets/multimodel.style.css" type="text/css" media="all">
     <title>MK Dealer</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
             <div class="grid">
                 <?php foreach ($cars as $car) { ?>
                     <div class="grid__item u-12/12--medium u-6/12--large u-4/12--large-x">
-                        <a href="/motork/web/detail/<?php echo $car->attrs->carId; ?>" target="_blank">
+                        <a href="/detail/<?php echo $car->attrs->carId; ?>" target="_blank">
                         <article class="card">
                             <figure class="card__picture">
                                 <div class="card__image">

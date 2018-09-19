@@ -4,8 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="noindex,nofollow">
     <title>MK Dealer - <?php echo $carDetail->attrs->make.' '.$carDetail->attrs->model; ?></title>
-    <link rel="stylesheet" href="../../web/assets/tab.css" type="text/css" media="all">
-    <link rel="stylesheet" href="../../web/assets/multimodel.style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/assets/multimodel.style.css" type="text/css" media="all">
     
 </head>
 
@@ -59,7 +58,7 @@
         <section class="multimodel__content">
             <?php if(isset($_SESSION['msg'])) { echo $_SESSION['msg']; } unset($_SESSION['msg']); ?>
             <div class="dk-forms">
-                <form action="http://localhost/motork/web/process/" method="post">
+                <form action="/process/" method="post">
                     <div class="landing-form-fields">
                         <span class="field field__name">
                             <label for="name" class="gui-label">Nome</label>
@@ -128,7 +127,7 @@
             <div class="grid">
                 <?php foreach ($similarCars as $key => $car) { ?>
                 <div class="grid__item u-12/12--medium u-6/12--large u-3/12--large-x u-padding-bottom--xs">
-                    <a href="/motork/web/detail/<?php echo $car->attrs->carId; ?>" target="_blank">
+                    <a href="/detail/<?php echo $car->attrs->carId; ?>" target="_blank">
                     <article class="card">
                         <figure class="card__picture">
                             <div class="card__image">
